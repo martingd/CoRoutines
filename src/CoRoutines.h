@@ -21,6 +21,7 @@
 
   CoRoutine
   ---------
+  The `CoRoutine` class is used for defining tasks.
   Each task is implemented as a subclass of class CoRoutine.
 
   Override method CoRoutine::worker() to define what the task should do.
@@ -30,7 +31,7 @@
   Returning -1 means that routine should be considered suspended and the
   worker will not be invoked again until awakened.
   
-  To invoke a task call the CoRoutine::resume(). This method will determine
+  To invoke a task call CoRoutine::resume(). This method will determine
   whether it is time to invoke the worker. If it is CoRoutine::worker()
   is called. Otherwise, resume() returns immediately which is also the case
   if the task is suspended.
