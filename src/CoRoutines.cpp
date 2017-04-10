@@ -1,9 +1,9 @@
 /*
   Simple co-routine library for Arduino.
   
-  Version 1.0 - 2011-01-01
+  Version 1.0.1 - 2017-04-10
 
-  Copyright 2011 Martin Gamwell Dawids.
+  Copyright 2011-2017 Martin Gamwell Dawids.
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -31,7 +31,12 @@
 
 
 #include <CoRoutines.h>
-#include <WProgram.h>
+
+#if defined(ARDUINO) && ARDUINO >= 100
+  #include "Arduino.h"
+#else
+  #include "WProgram.h"
+#endif
 
 namespace coroutines {
 
@@ -210,6 +215,8 @@ namespace coroutines {
 
 } // end of namespace coroutines
   
+
+#if !defined(ARDUINO) || ARDUINO < 100
 // We need this code to allow pure virtual functions
 // as the Arduino C++ compiler does not include it.
 // It should *never* be called.
@@ -224,3 +231,4 @@ void operator delete(void * ptr)
 { 
   free(ptr); 
 } 
+#endif

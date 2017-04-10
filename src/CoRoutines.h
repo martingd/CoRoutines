@@ -1,9 +1,9 @@
 /*
   Simple co-routine library for Arduino.
   
-  Version 1.0 - 2011-01-01
+  Version 1.0.1 - 2017-04-10
 
-  Copyright 2011 Martin Gamwell Dawids.
+  Copyright 2011-2017 Martin Gamwell Dawids.
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
