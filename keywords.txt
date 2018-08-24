@@ -6,23 +6,23 @@
 #######################################
 # Datatypes & Classes (KEYWORD1)
 ####################################### 
-coroutines  KEYWORD1
-CoRoutine   KEYWORD1
-Scheduler   KEYWORD1
+coroutines	KEYWORD1
+CoRoutine	KEYWORD1
+Scheduler	KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
 #######################################
 
-worker          KEYWORD2
-resume          KEYWORD2
-isSuspended     KEYWORD2
-awake           KEYWORD2
-suspend         KEYWORD2
+worker	KEYWORD2
+resume	KEYWORD2
+isSuspended	KEYWORD2
+awake	KEYWORD2
+suspend	KEYWORD2
 
-addCoRoutine    KEYWORD2
-removeCoRoutine KEYWORD2
-runOnce         KEYWORD2
+addCoRoutine	KEYWORD2
+removeCoRoutine	KEYWORD2
+runOnce	KEYWORD2
 
 #######################################
 # Constants (LITERAL1)
